@@ -18,7 +18,7 @@ const Overview = () => {
     <div>
       <Dashboard
         totalEngergy={member.totalEnergy}
-        totalDot={member.totalDot / 1000000000}
+        totalDot={(member.totalDot / 1000000000000000).toFixed(2)}
         totalProjects={project.projects.length}
         totalMembers={member.members.length}
       />
